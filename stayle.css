@@ -1,0 +1,162 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #080818;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+    letter-spacing: 5px;
+}
+
+p {
+    color: #aaa;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* 1 - BUTUN MAYDON BO'YLAB */
+.first {
+    width: 65px;
+    height: 65px;
+    background: red;
+    position: absolute;
+    border-radius: 10px;
+    animation: first 8s linear infinite;
+}
+
+@keyframes first {
+    0% {
+        top: 0;
+        left: 0;
+        background: red;
+        border-radius: 0;
+        transform: rotate(0deg);
+    }
+
+    25% {
+        top: 0;
+        left: calc(100% - 65px);
+        background: yellow;
+        border-radius: 50%;
+        transform: rotate(180deg);
+    }
+
+    50% {
+        top: calc(100vh - 65px);
+        left: calc(100% - 65px);
+        background: blue;
+        border-radius: 10px;
+        transform: rotate(360deg);
+    }
+
+    75% {
+        top: calc(100vh - 65px);
+        left: 0;
+        background: lime;
+        border-radius: 50%;
+        transform: rotate(540deg);
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+        background: red;
+        border-radius: 0;
+        transform: rotate(720deg);
+    }
+}
+
+/* 2 - SHAKL VA RANG O'ZGARISHI */
+.second {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    background: purple;
+    animation: second 3s infinite alternate;
+}
+
+@keyframes second {
+    0% {
+        background: purple;
+        border-radius: 0;
+        transform: scale(1) rotate(0deg);
+    }
+
+    50% {
+        background: orange;
+        border-radius: 50%;
+        transform: scale(1.5) rotate(180deg);
+    }
+
+    100% {
+        background: cyan;
+        border-radius: 20% 50% 20% 50%;
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+/* 3 - SAKRASH */
+.third {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 40px;
+    left: 70%;
+    background: lime;
+    border-radius: 50%;
+    animation: third 2s infinite alternate;
+}
+
+@keyframes third {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        background: lime;
+        border-radius: 50%;
+    }
+
+    50% {
+        transform: translateY(-150px) rotate(180deg);
+        background: pink;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(0) rotate(360deg);
+        background: dodgerblue;
+        border-radius: 30%;
+    }
+}
+body {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+
+    animation: fon 4s infinite alternate;
+}
+
+@keyframes fon {
+    0% {
+        background: white;
+        color: black;
+    }
+
+    100% {
+        background: black;
+        color: white;
+    }
+}
